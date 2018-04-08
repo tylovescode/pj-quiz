@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>How Well Do You Know Pearl Jam?</title>
+    <meta name="description" content="Pearl Jam Quiz">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+</head>
+<body>
+<header role='banner' class='header'>
+  <div class="header-image"><img src="https://downloads-pearljam-com.s3.amazonaws.com/img/hero-hero/150309928924b0fd239eda92165309efd6be833929.jpg" height="300px">
+  </div>
+</header>
+<div class="intro">
+  <p>October 22, 2015 officially marked 25 years of Pearl Jam performing live. Ten studio albums, hundreds of unique live performances and hundreds of official live concert bootleg releases later, the band continue to be critically acclaimed and commercially successful -- with over 60 million albums sold worldwide.</p>
+  <p>Take this quiz and see how well you know Pearl Jam.</p>
+    <button id="start-button">
+      <span class="button-label">Start Quiz</span>
+    </button>
+</div>
+<section class="questionPage">
+    <h2>How well do you know Pearl Jam?</h2>
+    <form class="questionPageForm">
+        <p class="js-questionNumber"></p>
+        <p class="js-quizQuestion"></p>
+          <div class="boundary">
+            <input type="radio" class="js-radio" name="userAnswer" value="1"><span class="js-answerChoice1"></span><br>
+            <input type="radio" class="js-radio" name="userAnswer" value="2"><span class="js-answerChoice2"></span><br>
+            <input type="radio" class="js-radio" name="userAnswer" value="3"><span class="js-answerChoice3"></span><br>
+            <input type="radio" class="js-radio" name="userAnswer" value="4"><span class="js-answerChoice4"></span><br> 
+          </div>
+        <button id="submit-button">
+            <span class="button-label">Submit your answer</span>
+        </button>
+    </form>
+  <div class='js-currentScore'>Score</div>
+  <div class="js-feedbackSection"></div>
+  <button id="next-button">
+    <span class="button-label">Next</span>
+  </button>
+</section>
+<div class="final-score"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="index.js"></script>    
+</body>
+</html>
